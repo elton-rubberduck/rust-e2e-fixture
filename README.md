@@ -10,3 +10,5 @@ Expected findings in `src/main.rs`:
 | 13 | query parameter reaches `sqlx::query(&format!(..))` |
 | 20 | route parameter reaches `std::fs::read_to_string` |
 | 26 | `env::var` reaches `Command::new` |
+
+Expected dependency finding in `Cargo.lock`: `smallvec` 1.6.0 (CVE-2021-25900, fixed in 1.6.1).
