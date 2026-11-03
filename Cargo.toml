@@ -1,0 +1,8 @@
+[package]
+name = "rust-e2e-fixture"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+sqlx = { version = "0.7", features = ["runtime-tokio", "postgres"] }
